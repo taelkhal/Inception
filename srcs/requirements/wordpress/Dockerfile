@@ -7,7 +7,7 @@ RUN apt-get update -y && apt-get upgrade -y \
     && apt-get install curl wget -y
 
 # Copy the shell script for our WordPress configuration
-COPY ./conf/script.sh .
+COPY ./tools/script.sh .
 
 # Give execute permissions to the shell script
 RUN chmod +x script.sh
